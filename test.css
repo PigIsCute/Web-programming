@@ -1,0 +1,16 @@
+table {
+    border: 2px solid black;
+    text-align: center;
+}
+
+th,
+td {
+    border: 2px solid black;
+    text-align: center;
+    width: 10px;
+    height: 10px;
+}
+
+.spancell {
+    background-color: bisque;
+}
