@@ -1,89 +1,51 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <style>
-        table {
-            border: 2px solid black;
-            text-align: center;
-        }
-
-        th,
-        td {
-            border: 2px solid black;
-            text-align: center;
-            width: 10px;
-            height: 10px;
-        }
-
-        .spancell {
-            background-color: bisque;
-        }
-
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Styled Table</title>
 </head>
-
 <body>
-
-    <h2>Table With Border</h2>
-
-    <p>Use the CSS border property to add a border to the table.</p>
-
-    <table style="width:100%">
-        <tr>
-            <th colspan="6" style="background-color: green;">table title</th>
-        </tr>
-        <tr>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-            <th>5</th>
-            <th>6</th>
-        </tr>
-        <tr>
-            <td colspan="3" class="spancell">7</td>
-            <td colspan="3" class="spancell">8</td>
-        </tr>
-        <tr>
-            <td rowspan="2" class="spancell">9</td>
-            <td>10</td>
-            <td rowspan="2" class="spancell">11</td>
-            <td>12</td>
-            <td rowspan="2" class="spancell">13</td>
-            <td>14</td>
-        </tr>
-        <tr>
-            <td>15</td>
-            <td>16</td>
-            <td>17</td>
-        </tr>
-        <tr>
-            <td>18</td>
-            <td>19</td>
-            <td>20</td>
-            <td>21</td>
-            <td>22</td>
-            <td>23</td>
-        </tr>
-        <tr>
-            <td>24</td>
-            <td colspan="4" rowspan="3" class="spancell">25</td>
-            <td>25</td>
-        </tr>
-        <tr>
-            <td>26</td>
-            <td>27</td>
-        </tr>
-        <tr>
-            <td>28</td>
-            <td>29</td>
-        </tr>
-        <tr>
-            <th colspan="6" style="background-color: green;">table footnote</th>
-        </tr>
+    <table id="styled-table">
+        <thead>
+            <tr>
+                <th calss="test">MAth</th>
+                <th calss="test">ENGLISH</th>
+                <th calss="test">PROGRAMMING</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td calss="test">90</td>
+                <td calss="test">60</td>
+                <td calss="test">80</td>
+            </tr>
+            <tr>
+                <td calss="test">80</td>
+                <td calss="test">86</td>
+                <td calss="test">98</td>
+            </tr>
+        </tbody>
     </table>
-
+    <div class="controls">
+        <button id="width200">Width: 200px</button>
+        <button id="width500">Width: 500px</button>
+    </div>
+    <div class="controls">
+        <button id="border0">Border: 0</button>
+        <button id="border1">Border: 1</button>
+        <button id="border2">Border: 2</button>
+    </div>
+    <div class="controls">
+        <button id="bgRed">BG Color: Red</button>
+        <button id="bgBlue">BG Color: Blue</button>
+        <button id="bgGreen">BG Color: Green</button>
+        <button id="bgPurple">BG Color: Green</button>
+    </div>
+    <div class="controls">
+        <button id="bgReset">Reset</button>
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
